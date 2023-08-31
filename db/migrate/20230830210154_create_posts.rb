@@ -12,6 +12,6 @@ class CreatePosts < ActiveRecord::Migration[7.0]
 
     add_reference :posts, :user, foreign_key: true
 
-	add_index :posts, :user_id
+    add_index :posts, :user_id
   end
 end

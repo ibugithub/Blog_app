@@ -11,7 +11,7 @@ class CreateComments < ActiveRecord::Migration[7.0]
     add_reference :comments, :user, foreign_key: true
     add_reference :comments, :post, foreign_key: true
 
-	add_index :comments, :user_id
+    add_index :comments, :user_id
     add_index :comments, :post_id
   end
 end
